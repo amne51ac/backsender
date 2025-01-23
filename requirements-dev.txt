@@ -1,0 +1,12 @@
+# Include production dependencies
+-r requirements.txt
+
+# Development dependencies
+tox
+pytest
+pytest-cov
+flake8
+black
+sphinx
+sphinx-autodoc-typehints
+spinxawesome-theme
