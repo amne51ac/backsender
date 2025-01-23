@@ -29,13 +29,13 @@ jobs:
           pip install -r requirements-dev.txt
 
       - name: Build Sphinx documentation
-        run: sphinx-build -b html docs docs/_build/html
+        run: sphinx-build -b html docs docs/_build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
           name: github-pages
-          path: docs/_build/html  # Make sure this points to the correct Sphinx output directory
+          path: docs/_build  # Make sure this points to the correct Sphinx output directory
 
   deploy:
     runs-on: ubuntu-latest
