@@ -34,7 +34,6 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
-          name: github-pages
           path: docs/_build  # Make sure this points to the correct Sphinx output directory
 
   deploy:
