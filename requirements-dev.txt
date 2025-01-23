@@ -9,4 +9,4 @@ flake8
 black
 sphinx
 sphinx-autodoc-typehints
-spinxawesome-theme
+sphinxawesome-theme
