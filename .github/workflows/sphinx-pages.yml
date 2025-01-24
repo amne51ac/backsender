@@ -31,6 +31,9 @@ jobs:
       - name: Build Sphinx documentation
         run: sphinx-build -b html docs docs/_build
 
+      - name: Verify build output
+        run: ls -R docs
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
